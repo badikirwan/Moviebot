@@ -13,7 +13,7 @@ const server = express();
 server.use(bodyParser.json());
 server.post('/getMovies',function (request,response)  {
     if(request.body.result.parameters['top-rated']) {
-        var req = unirest("GET", "https://api.themoviedb.org/3/movie/top_rated");
+        var req = unirest("GET", "https://api.themoviedb.org/3/movie/top_rated?api_key=33a4f2f91284c9133695dfba6bd802da");
             req.query({
                 "page": "1",
                 "language": "en-US",
