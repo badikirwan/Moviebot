@@ -36,8 +36,8 @@ server.post('/getMovies',function (request,response)  {
                     }
                     response.setHeader('Content-Type', 'application/json');
                     response.send(JSON.stringify({
-                        "speech" : output,
-                        "displayText" : output
+                        "fulfillmentText" : output,
+                        "fulfillmentText" : output
                     })); 
                 }
             });
